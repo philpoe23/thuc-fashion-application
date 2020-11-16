@@ -6,6 +6,7 @@ import MyButton from "../../util/MyButton";
 import PostScrean from "../screan/PostScrean";
 import Notifications from "./Notifications";
 import Messaging from "../messaging/messaging";
+import SearchBar from "../../util/SearchBar";
 // MUI stuff
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
@@ -13,6 +14,9 @@ import Button from "@material-ui/core/Button";
 // Icons
 import HomeIcon from "@material-ui/icons/Home";
 import MessageIcon from "@material-ui/icons/Message";
+import AppIcon from '../../images/icon_smaller.png';
+
+
 
 class Navbar extends Component {
   render() {
@@ -20,6 +24,7 @@ class Navbar extends Component {
     return (
       <AppBar>
         <Toolbar className="nav-container">
+        <img src={AppIcon} alt="logo"/>
           {authenticated ? (
             <Fragment>
               <PostScrean />
@@ -30,6 +35,7 @@ class Navbar extends Component {
               </Link>
               <Notifications />
               <Messaging />
+              <SearchBar />
             </Fragment>
           ) : (
             <Fragment>

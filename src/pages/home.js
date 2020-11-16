@@ -6,7 +6,6 @@ import Screan from "../components/screan/Screan";
 import Profile from "../components/profile/Profile";
 import ScreanSkeleton from "../util/ScreanSkeleton";
 
-import Logo from "../images/logo";
 
 import { connect } from "react-redux";
 import { getScreans } from "../redux/actions/dataActions";

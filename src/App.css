@@ -11,7 +11,7 @@ body {
   max-width: 1200px;
 }
 .nav-container {
-  margin: auto;
+  
 }
 .nav-container svg {
   color: #fff;
@@ -21,5 +21,10 @@ a {
   text-decoration: none;
 }
 
-img {
+.icon img {
+  width: 100px;
+}
+
+input {
+  border-radius: 3px;
 }
